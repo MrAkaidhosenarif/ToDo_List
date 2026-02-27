@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100dvh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cccccc;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    background-color: #F9F9F9;
+    border-radius: 2rem;
+    height: 80%;
+    width: min(900px, 90%);
+}
+
+.content-area {
+    background-color: sandybrown;
+    height: 90%;
+    width: 72.5%;
+    border-radius: 1em;
+}
+
+.content-area .top-content {
+    background-color: rgb(170, 204, 120);
+    width: 100%;
+    height: 65%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+.top-content .top-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+}
+
+.top-header .top-heading {
+    padding: 1vw;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sorting-buttons input {
+    display: none;
+}
+.sorting-buttons label p:hover {
+    background-color: #E6E9EF;
+}
+
+.sorting-buttons input:checked+label p {
+    background-color: white;
+    color: black;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.sorting-buttons input:checked+label p {
+    background-color: white;
+    color: black;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.top-header .sorting-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F4F7;
+    border-radius: 50px;
+    padding: 5px;
+    gap: 10px;
+}
+
+.sorting-buttons label p {
+    padding: 8px 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: gray;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+/* all the css for bottom content's header  */
+
+.bottom-heading {
+    padding: 1vw;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.bottom-header .bottom-heading-bottom {
+    padding: 1vw;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.content-area .bottom-content {
+    background-color: green;
+    width: 100%;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+.bottom-content .bottom-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+}
+
+.bottom-header .sorting-buttons-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F4F7;
+    border-radius: 50px;
+    padding: 5px;
+    gap: 10px;
+}
+
+.sorting-buttons-bottom input {
+    display: none;
+}
+
+.sorting-buttons-bottom label p {
+    padding: 8px 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: gray;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.sorting-buttons-bottom label p:hover {
+    background-color: #E6E9EF;
+}
+
+.sorting-buttons-bottom input:checked+label p {
+    background-color: white;
+    color: black;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.sorting-buttons-bottom input:checked+label p {
+    background-color: white;
+    color: black;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+/*
+all the css for menu area
+*/
+.menu-area {
+    background-color: #ececec;
+    width: 25%;
+    height: 100%;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 1rem;
+}
+
+
+.menu-area .top-section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.top-section .icon-and-username {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon-and-username .moon-bg {
+    height: 30px;
+    aspect-ratio: 1 / 1;
+    background-color: #CCFE36;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.moon-bg i {
+    font-size: 1.5rem;
+}
+
+.moon-bg:hover {
+    transform: scale(1.1);
+}
+
+.icon-and-username p {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-section .menu-btns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.menu-btns .create-btn {
+    background-color: #222222 !important;
+    color: white !important;
+}
+
+.menu-btns .create-btn:hover {
+    background-color: #6e5454 !important;
+    transition: all 0.3s ease;
+}
+
+.top-section .menu-btns div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+
+.menu-btns div:hover {
+    background: #797979;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.menu-area .bottom-section {
+    height: auto;
+    width: 100%;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-section div {
+    padding: 5px 5px;
+    border-radius: 5px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    background-color: white;
+}
+
+.bottom-section div:hover {
+    background: #797979;
+    color: white;
+    transition: all 0.3s ease;
+}

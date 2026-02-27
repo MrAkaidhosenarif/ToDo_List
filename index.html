@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo_List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- main container  -->
+    <div class="main-container">
+
+        <!-- this area is for left side aside -->
+        <aside class="menu-area">
+            <!-- for user name and buttons -->
+            <div class="top-section">
+                <!-- for dark mode icon and username -->
+                <div class="icon-and-username">
+                    <div class="moon-bg">
+                        <i class="ri-moon-fill"></i>
+                    </div>
+                    <p>Mahmudul Hasan</p>
+                </div>
+
+                <!-- for buttons like create, switching mode -->
+                <div class="menu-btns">
+                    <div class="create-btn">
+                        <i class="ri-add-circle-line"></i>
+                        <p>Create Note</p>
+                    </div>
+                    <div class="search-btn">
+                        <i class="ri-search-line"></i>
+                        <p>Search</p>
+                    </div>
+                    <div class="recycle-btn">
+                        <i class="ri-delete-bin-6-line"></i>
+                        <p>Recycle</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-section">
+                <div>
+                    <i class="ri-question-line"></i>
+                    <p>Help</p>
+                </div>
+                <div>
+                    <i class="ri-settings-5-line"></i>
+                    <p>Setting</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- content area for this structure  -->
+        <main class="content-area">
+
+            <!-- this for top content -->
+            <div class="top-content">
+                <div class="top-header">
+                    <div class="top-heading">
+                        <p>MyNotes</p>
+                    </div>
+                    <!-- this is for sorting area for right side  -->
+                    <div class="sorting-buttons">
+
+                        <!-- these input are for selection one time in one option  -->
+                        <input type="radio" name="top-todo" id="today" checked>
+                        <label for="today">
+                            <p>To Do</p>
+                        </label>
+
+                        <input type="radio" name="top-todo" id="week" >
+                        <label for="week">
+                            <p>Notepad</p>
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- this for bottom content area  -->
+            <div class="bottom-content">
+                <div class="bottom-header">
+
+                    <div class="bottom-heading">
+                        <p>MyNotes</p>
+                    </div>
+
+                    <div class="sorting-buttons-bottom">
+                        <input type="radio" name="bottom-todo" id="bottom-todo" checked>
+                        <label for="bottom-todo">
+                            <p>All</p>
+                        </label>
+
+                        <input type="radio" name="bottom-todo" id="bottom-two">
+                        <label for="bottom-two">
+                            <p>Recent</p>
+                        </label>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+</body>
+
+</html>
