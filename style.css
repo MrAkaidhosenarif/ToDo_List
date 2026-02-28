@@ -56,6 +56,7 @@ body {
 .sorting-buttons input {
     display: none;
 }
+
 .sorting-buttons label p:hover {
     background-color: #E6E9EF;
 }
@@ -137,7 +138,7 @@ body {
 }
 
 .sorting-buttons-bottom label p {
-    padding: 8px 18px;
+    padding: 5px 18px;
     border-radius: 50px;
     cursor: pointer;
     color: gray;
@@ -263,7 +264,7 @@ all the css for menu area
 .menu-area .bottom-section {
     height: auto;
     width: 100%;
-    gap: 0.5rem;
+    gap: 0.4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -285,4 +286,133 @@ all the css for menu area
     background: #797979;
     color: white;
     transition: all 0.3s ease;
+}
+
+/* THESE CSS FOR NOTE BOX  */
+.top-body-area {
+    width: 100%;
+    height: 100%;
+    padding: 0px ;
+    background: #f4f5f7;
+}
+
+.top-content-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 300px;
+    gap: 25px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.note-box-structure-purple,
+.note-box-structure-yellow,
+.note-box-structure-green {
+    /* width: 200px; */
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: 0.3s ease;
+    flex: 0 0 200px;
+    justify-content: center
+}
+
+.note-box-structure-yellow .note-header {
+    padding: 14px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    background: #f9eacb;
+}
+
+
+.note-box-structure-green .note-header {
+    padding: 14px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    background: #dff3d8;
+}
+
+.note-box-structure-purple .note-header {
+    padding: 14px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    background: #dcd2f7;
+}
+
+.note-box-structure-purple:hover,
+.note-box-structure-yellow:hover,
+.note-box-structure-green:hover {
+    transform: translateY(-5px);
+}
+
+
+.note-list {
+    list-style: none;
+    padding: 15px 18px;
+}
+
+.note-list li {
+    padding: 10px 0;
+    font-size: 13px;
+    color: #666;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.note-list li:last-child {
+    border-bottom: none;
+}
+
+.arrow-btn{
+    bottom: -80px;
+    position: relative;
+    width: 100%;
+}
+
+.arrow-left,
+.arrow-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+    z-index: 10;
+    font-size: 20px;
+}
+
+.arrow-left {
+    left: -25px;
+}
+
+.arrow-right {
+    right: -25px;
+}
+
+.arrow-btn i{
+    opacity: 0.4;
+    transition: 0.3s;
+}
+
+.arrow-btn i:hover {
+    opacity: 1;
+    transform: translateY(-10%) scale(1.1);
 }

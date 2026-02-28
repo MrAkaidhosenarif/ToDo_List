@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    width: 300px;
+    height: auto;
+    background-color: #f1f1f1;
+    margin: 20px auto;
+}
+.cell{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+.cell p{
+    font-size: 18px;
+    font-weight: 300;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+.cell button{
+    padding: 6px 10px;
+    border: none;
+    background-color: rgba(46, 21, 158, 0.884);
+    cursor: pointer;
+    border-radius: 8px;
+    color: #fff;
+}
+
