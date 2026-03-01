@@ -297,6 +297,7 @@ all the css for menu area
 }
 
 .top-content-body {
+    padding: 40px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -377,7 +378,7 @@ all the css for menu area
 }
 
 .arrow-btn{
-    bottom: -80px;
+    bottom: -125px;
     position: relative;
     width: 100%;
 }
@@ -398,10 +399,10 @@ all the css for menu area
     z-index: 10;
     font-size: 20px;
 }
-
+/* 
 .arrow-left {
     left: -25px;
-}
+} */
 
 .arrow-right {
     right: -25px;
